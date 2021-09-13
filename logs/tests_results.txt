@@ -1,0 +1,70 @@
+test_get_nb_char (__main__.TestExercice) ... ERROR
+test_get_nb_words (__main__.TestExercice) ... ERROR
+test_pair (__main__.TestExercice) ... ERROR
+test_remove_third_char (__main__.TestExercice) ... ERROR
+test_replace_char (__main__.TestExercice) ... ERROR
+
+======================================================================
+ERROR: test_get_nb_char (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:/Users/Jordan Low/c03_ch4_exercices-JordanLow682/test_exercice.py", line 59, in test_get_nb_char
+    output = [exercice.get_nb_char(v[0], v[1]) for v in values]
+  File "c:/Users/Jordan Low/c03_ch4_exercices-JordanLow682/test_exercice.py", line 59, in <listcomp>
+    output = [exercice.get_nb_char(v[0], v[1]) for v in values]
+  File "c:\Users\Jordan Low\c03_ch4_exercices-JordanLow682\exercice.py", line 25, in get_nb_char
+    for letter in str:
+TypeError: 'type' object is not iterable
+
+======================================================================
+ERROR: test_get_nb_words (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:/Users/Jordan Low/c03_ch4_exercices-JordanLow682/test_exercice.py", line 75, in test_get_nb_words
+    output = [exercice.get_nb_words(v) for v in values]
+  File "c:/Users/Jordan Low/c03_ch4_exercices-JordanLow682/test_exercice.py", line 75, in <listcomp>
+    output = [exercice.get_nb_words(v) for v in values]
+  File "c:\Users\Jordan Low\c03_ch4_exercices-JordanLow682\exercice.py", line 33, in get_nb_words
+    for letter in str:
+TypeError: 'type' object is not iterable
+
+======================================================================
+ERROR: test_pair (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:/Users/Jordan Low/c03_ch4_exercices-JordanLow682/test_exercice.py", line 15, in test_pair
+    output = [exercice.is_even_len(v) for v in values]
+  File "c:/Users/Jordan Low/c03_ch4_exercices-JordanLow682/test_exercice.py", line 15, in <listcomp>
+    output = [exercice.is_even_len(v) for v in values]
+  File "c:\Users\Jordan Low\c03_ch4_exercices-JordanLow682\exercice.py", line 7, in is_even_len
+    if len(str) % 2 == 0:
+TypeError: object of type 'type' has no len()
+
+======================================================================
+ERROR: test_remove_third_char (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:/Users/Jordan Low/c03_ch4_exercices-JordanLow682/test_exercice.py", line 27, in test_remove_third_char
+    output = [exercice.remove_third_char(v) for v in values]
+  File "c:/Users/Jordan Low/c03_ch4_exercices-JordanLow682/test_exercice.py", line 27, in <listcomp>
+    output = [exercice.remove_third_char(v) for v in values]
+  File "c:\Users\Jordan Low\c03_ch4_exercices-JordanLow682\exercice.py", line 15, in remove_third_char
+    new_string = str[0:3:] + str[4::]
+TypeError: 'type' object is not subscriptable
+
+======================================================================
+ERROR: test_replace_char (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "c:/Users/Jordan Low/c03_ch4_exercices-JordanLow682/test_exercice.py", line 43, in test_replace_char
+    output = [exercice.replace_char(v[0], v[1], v[2]) for v in values]
+  File "c:/Users/Jordan Low/c03_ch4_exercices-JordanLow682/test_exercice.py", line 43, in <listcomp>
+    output = [exercice.replace_char(v[0], v[1], v[2]) for v in values]
+  File "c:\Users\Jordan Low\c03_ch4_exercices-JordanLow682\exercice.py", line 20, in replace_char
+    return str.replace(old_char, new_char)
+TypeError: replace expected at least 2 arguments, got 1
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (errors=5)
