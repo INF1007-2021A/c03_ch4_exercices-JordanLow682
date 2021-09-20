@@ -4,7 +4,7 @@
 
 def is_even_len(string: str) -> bool:
     is_pair = True
-    if len(str) % 2 == 0:
+    if len(string) % 2 == 0:
         is_pair = True
     else:
         is_pair = False
@@ -12,27 +12,35 @@ def is_even_len(string: str) -> bool:
 
 
 def remove_third_char(string: str) -> str:
-    new_string = str[0:3:] + str[4::]
+    new_string = string[0:2:] + string[3::]
     return new_string
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    return str.replace(old_char, new_char)
+    new_string = ""
+    for letter in string:
+        if letter == old_char:
+            new_string += new_char
+        else:
+            new_string += letter
+    return new_string
 
 
-def get_nb_char(string: str, char: chr) -> int:
+def get_nb_char(string: str, char: str) -> int:
     counter = 0
-    for letter in str:
-        if letter == chr:
+    for letter in string:
+        if letter == char:
             counter += 1
     return counter
 
 
 def get_nb_words(sentence: str) -> int:
     counter = 1
-    for letter in str:
-        if letter == "":
+    for letter in sentence:
+        if letter == " ":
             counter += 1
+        else:
+            counter = counter
     return counter
 
 
